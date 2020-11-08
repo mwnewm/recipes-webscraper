@@ -20,11 +20,6 @@
   },
   "homepage": "https://github.com/mwnewm/recipes-webscraper#readme",
   "dependencies": {
-    "bootstrap": "^4.5.3",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
