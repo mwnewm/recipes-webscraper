@@ -1,4 +1,5 @@
-console.log(scrape());
+scrape();
+
 
 function scrape(){
   let list = document.getElementsByClassName("ingredients-item-name");
@@ -17,9 +18,11 @@ function scrape(){
 
     i++;
   }
-  return {
+  let message = {
     "numIngredients": numIngredients,
     "quantities": quantitiesArr,
     "ingredientNames": ingredArr
-  }
+  };
+  console.log(message);
+  chrome.runtime.sendMessage(message);
 }

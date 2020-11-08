@@ -1,7 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+chrome.runtime.onMessage.addListener(receiver);
 
-import 'bootstrap/dist/css/bootstrap.css';
+window.ingredientList = {};
 
-ReactDOM.render(<App />, document.getElementById("root"));
+function receiver(request, sender, response){
+  console.log(request);
+  window.ingredientList = request;
+}
