@@ -1,0 +1,15 @@
+
+.header {
+  overflow: hidden;
+  background-color: #a52aed;
+  padding: 20px 10px;
+}
+
+.body {
+  background-color: : #e8e8e8;
+  padding: 20px 10px;
+}
+
+.h1 {
+  align-self: center;
+}

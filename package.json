@@ -1,0 +1,22 @@
+{
+  "name": "recipes-webscraper",
+  "version": "1.0.0",
+  "description": "A chrome extension to scrape ingredient lists from a recipe on the internet and add them to a shopping list!",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwnewm/recipes-webscraper.git"
+  },
+  "author": "Maeve Newman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwnewm/recipes-webscraper/issues"
+  },
+  "homepage": "https://github.com/mwnewm/recipes-webscraper#readme",
+  "dependencies": {
+    "react-bootstrap": "^1.4.0"
+  }
+}
