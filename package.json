@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "description": "A chrome extension to scrape ingredient lists from a recipe on the internet and add them to a shopping list!",
   "main": "background.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mwnewm/recipes-webscraper.git"
@@ -19,9 +14,18 @@
     "url": "https://github.com/mwnewm/recipes-webscraper/issues"
   },
   "homepage": "https://github.com/mwnewm/recipes-webscraper#readme",
-  "dependencies": {
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {},
+  "eslintConfig": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

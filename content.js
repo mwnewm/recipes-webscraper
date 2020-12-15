@@ -1,5 +1,14 @@
-scrape();
+chrome.runtime.sendMessage({msg: "valid website"});
 
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if (request.msg == "scrape"){
+      ingredList = scrape();
+      sendResponse(ingredList);
+    }
+    return true;
+  }
+);
 
 function scrape(){
   let list = document.getElementsByClassName("ingredients-item-name");
@@ -18,11 +27,10 @@ function scrape(){
 
     i++;
   }
-  let message = {
+  let ingredList = {
     "numIngredients": numIngredients,
     "quantities": quantitiesArr,
     "ingredientNames": ingredArr
   };
-  console.log(message);
-  chrome.runtime.sendMessage(message);
+  return ingredList;
 }
